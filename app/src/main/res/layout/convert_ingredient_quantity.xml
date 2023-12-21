@@ -1,0 +1,127 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="48dp"
+        android:backgroundTint="@color/transparent"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/close_button"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/textViewConversionResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/closeButton"
+        android:text="@string/conversion_result"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewConvertedResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConversionResultLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/_0"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewConvertedResult"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_ingredient_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextIngredient"
+        android:layout_marginTop="16dp"
+        android:hint="@string/quantity"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        tools:ignore="TextContrastCheck" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSpinners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuantity"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Spinner
+            android:id="@+id/spinnerFromUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:entries="@array/metric_measurements"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSwapUnits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/swap_units"
+            android:padding="8dp"
+            android:src="@drawable/swap_icon_custom"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinnerToUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:entries="@array/imperial_measurements"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchConvertOrAddIngredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutSpinners"
+        android:minHeight="48dp"
+        android:text="@string/convert_and_add" />
+
+
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@id/switchConvertOrAddIngredient"
+        android:text="@string/convert" />
+
+
+
+
+
+</RelativeLayout>

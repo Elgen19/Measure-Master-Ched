@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Metric Measurements -->
+    <string-array name="metric_measurements">
+        <item>Metric</item>
+        <item>Milliliters (ml)</item>
+        <item>Liters (l)</item>
+        <item>Grams (g)</item>
+        <item>Kilograms (kg)</item>
+    </string-array>
+
+    <!-- Imperial Measurements -->
+    <string-array name="imperial_measurements">
+        <item>Imperial</item>
+        <item>Teaspoon (tsp)</item>
+        <item>Tablespoon (tbsp)</item>
+        <item>Cup (cup)</item>
+        <item>Gallon (gal)</item>
+        <item>Quart (qt)</item>
+        <item>Ounce (oz)</item>
+        <item>Fluid Ounce (fl oz)</item>
+        <item>Pounds (lbs)</item>
+    </string-array>
+
+    <string-array name="all_measurements">
+        <item>Milliliters (ml)</item>
+        <item>Liters (l)</item>
+        <item>Grams (g)</item>
+        <item>Kilograms (kg)</item>
+        <item>Teaspoon (tsp)</item>
+        <item>Tablespoon (tbsp)</item>
+        <item>Cup (cup)</item>
+        <item>Gallon (gal)</item>
+        <item>Quart (qt)</item>
+        <item>Ounce (oz)</item>
+        <item>Fluid Ounce (fl oz)</item>
+        <item>Pounds (lbs)</item>
+        <item>Piece</item>
+        <item>Slice</item>
+        <item>Clove</item>
+        <item>Piece</item>
+        <item>Bulb</item>
+        <item>Whole</item>
+    </string-array>
+
+
+</resources>
